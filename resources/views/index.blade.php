@@ -41,10 +41,10 @@
                         @foreach($tasks as$key =>$task)
                             <tr>
                                 <td scope="row">{{ ++$key }}</td>
-                                <td>{{ $task['title'] }}</td>
-                                <td>{{ $task['content'] }}</td>
-                                <td>{{ $task['created_at'] }}</td>
-                                <td>{{ $task['due_date'] }}</td>
+                                <td>{{ $task->title }}</td>
+                                <td>{{ $task->content }}</td>
+                                <td>{{ $task->created_at }}</td>
+                                <td>{{ $task->due_date }}</td>
                             </tr>
                         @endforeach
                     @endif
